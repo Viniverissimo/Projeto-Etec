@@ -1,0 +1,53 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.back {
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;  
+}
+
+.init {
+    text-align: center;
+    color: white;
+}
+
+.text {
+    margin-top: 80px;
+}
+
+.sep {
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 8%;
+}
+
+.bgground {
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    padding-bottom: 50px;
+}
+
+/*
+@media screen and (max-width: 800px) {
+    .card {
+        display:block;
+        width:95%;
+    }
+
+    .col-3{
+        display:block;
+        width:100%;
+    }
+
+    .sep {
+        display:inline-block;
+    }
+*/
+
+}

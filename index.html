@@ -11,7 +11,7 @@
     <!--ICONS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!--CSS CUSTOM-->
     <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -19,7 +19,11 @@
   <!--NAVBAR-->
   <div class="container-fluid back">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">ETEC PAULISTANO</a>
+      <a class="navbar-brand" href="#">ETEC PAULISTANO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#INICIO">INICIO</a>
@@ -27,21 +31,21 @@
           <li class="nav-item">
             <a class="nav-link" href="#SOBRE">SOBRE</a>
           </li>
-
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#ROBOS" id="navbardrop" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
               ROBÔS
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#ROBOS">FACEBOOK</a>
-              <a class="dropdown-item" href="#ROBOS">WHATSAPP</a>
-              <a class="dropdown-item" href="#ROBOS">YOUTUBE</a>
+              <a class="dropdown-item" href="#FACEBOOK">FACEBOOK</a>
+              <a class="dropdown-item" href="#WHATSAPP">WHATSAPP</a>
+              <a class="dropdown-item" href="#YOUTUBE">YOUTUBE</a>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#CONTATO">CONTATO</a>
           </li>
         </ul>
+      </div>
       </nav>
 
       <!-- INICIO -->
@@ -52,8 +56,8 @@
         </div>
         <div class="col-lg-7" style="margin-top: 50px;">
           <h3>Bots, uma abreviação de robots (robôs, em português), são softwares desenvolvidos para simular a ação humana de forma padronizada e repetida na internet. Como um programa de computador, são utilizados por sites, plataformas e ferramentas para executar tarefas de maneira automatizada.</h3>
-          <button type="button" class="btn"><a href="#SOBRE"><strong>SAIBA MAIS</strong></a></button>
-          <button type="button" class="btn"><a href="#CONTATO"><strong>CONTATO</strong></a></button>
+          <a href="#SOBRE"><button type="button" class="btn"><strong>SAIBA MAIS</strong></button></a>
+          <a href="#CONTATO"><button type="button" class="btn"><strong>CONTATO</strong></button></a>
         </div>
       </div>
     </div>
@@ -62,25 +66,25 @@
 
       <!-- CARDS -->
   <div class="container-fluid justify-content-center row " style="margin-top: -40px">
-    <div class="card shadow sep">
+    <a href="#FACEBOOK"></a><div class="card shadow sep"></a>
       <img class="card-img-top" src="midia/imagem/icone.png" alt="Card image" style="width:100px">
       <div class="card-body">
         <h4 class="card-title"><strong>ROBÔ PARA FACEBOOK</strong></h4>
-        <p class="card-text">Conheça tudo sobre</p>
+        <a href="#FACEBOOK"><button type="button" class="btn2"><strong>SAIBA MAIS</strong></button></a>
       </div>
     </div>
     <div class="card shadow sep">
       <img class="card-img-top" src="midia/imagem/icone.png" alt="Card image" style="width:100px">
       <div class="card-body">
         <h4 class="card-title"><strong>ROBÔ PARA YOUTUBE</strong></h4>
-        <p class="card-text">Conheça tudo sobre</p>
+        <a href="#YOUTUBE"><button type="button" class="btn2"><strong>SAIBA MAIS</strong></button></a>
       </div>
     </div>
     <div class="card shadow sep">
       <img class="card-img-top" src="midia/imagem/icone.png" alt="Card image" style="width:100px">
       <div class="card-body">
        <h4 class="card-title"><strong>ROBÔ PARA WHATSAPP</strong></h4>
-       <p class="card-text">Conheça tudo sobre</p>
+       <a href="#WHATSAPP"><button type="button" class="btn2"><strong>SAIBA MAIS</strong></button></a>
      </div>
    </div>
   </div>
@@ -145,7 +149,7 @@
         <img src="midia/imagem/bot-face.png" alt="Robô" style="width: 400px; padding-top: 1%; margin-top: 50px;">
       </div>
       <div class="col-lg-8" style="margin-top: 7%;">
-        <h3><strong>ROBÔ PARA FACEBOOK</strong></h3>
+        <h3 id="FACEBOOK"><strong>ROBÔ PARA FACEBOOK</strong></h3>
         <br>
         <h4>Os bots são robôs virtuais configurados para executar ações predeterminadas. Eles podem ser utilizados em diferentes contextos nas estratégias nas redes sociais. No Facebook, eles servem para automatizar a interação entre os usuários.
         <br>
@@ -155,7 +159,7 @@
         <img src="midia/imagem/bot-whats.png" alt="Robô" style="width: 400px; padding-top: 1%; margin-top: 50px;">
       </div>
       <div class="col-lg-8" style="margin-top: 7%;">
-        <h3><strong>ROBÔ PARA WHATSAPP</strong></h4>
+        <h3 id="WHATSAPP"><strong>ROBÔ PARA WHATSAPP</strong></h4>
         <br>
         <h4>Para interagir com bots no WhatsApp é necessário, em primeiro lugar, adicioná-lo aos seus contatos, como se o número de contato do robô, na verdade, pertencesse a uma conta pessoal. Inicie a conversa com o bot enviando um "olá" e responda às solicitações enviadas por ele.
         <br>
@@ -166,7 +170,7 @@
         <img src="midia/imagem/bot-youtube.png" alt="Robô" style="width: 400px; padding-top: 1%; margin-top: 50px;">
       </div>
       <div class="col-lg-8" style="margin-top: 7%;">
-        <h3><strong>ROBÔ PARA YOUTUBE</strong></h3>
+        <h3 id="YOUTUBE"><strong>ROBÔ PARA YOUTUBE</strong></h3>
         <br>
         <h4>Você pode configurar um bot do YouTube para realizar tarefas diárias e automatizar seu fluxo de trabalho. Um exemplo pode ser garantir que todos os vídeos em sua página recebam uma visualização e um comentário todos os dias. Você também pode usar bots (ou plataformas de organização de conteúdo) para compartilhar automaticamente seus vídeos nas redes sociais. Isso libera você para se concentrar na criação de conteúdo de qualidade.</h4>
       </div>
@@ -186,7 +190,7 @@
       </div>
       <div class="col-lg-6">
         <form>
-          <div class="form-group">
+          <div class="form-group" style="margin-top: 20px;">
             <label for="exampleInputEmail1" >Nome Completo</label>
             <input type="email" class="form-control" id="inputname" aria-describedby="emailHelp" placeholder="Seu nome completo"  style="margin-bottom: 20px;">
             <label for="exampleInputEmail1">Endereço de email</label>
@@ -214,8 +218,8 @@
   </footer>
 
   <!--JAVASCRIPT-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>

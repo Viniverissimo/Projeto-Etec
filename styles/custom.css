@@ -2,6 +2,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+    /* BACKGROUND CRIADO PARA A PAGINA INICIO*/
 .back {
     background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);    
@@ -10,12 +11,14 @@ body {
     width: 100%;  
 }
 
+    /*CENTRALIZANDO DO TEXTO E DEIXANDO NA COR BRANCA */
 .init {
     text-align: center;
     color: white;
     list-style-type: none;
 }
 
+    /* SEPARADORES DOS CARDS */
 .sep {
     width: 350px;
     margin-left: 3%;
@@ -25,17 +28,17 @@ body {
     background-color: #ffffff;
     background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
-
+    /* BACKGROUND CRIADO PARA A PAGINA SOBRE */
 .bgground {
     background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);    
 }
 
+    /* PERSONALIZAÇÃO DO MAPA */
 .map-container{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:56%;
     position:relative;
-    height:0;
     }
     .map-container iframe{
     left:0;
@@ -45,6 +48,7 @@ body {
     position:absolute;
     }
 
+    /* BOTÃO ESTILIZADO PADRÃO PARA O SITE */
 .btn {
     border-radius: 20px;
     text-decoration: none;
@@ -62,6 +66,7 @@ body {
     box-shadow: 6px 6px 20px -9px rgba(0,0,0,0.75);
 }
 
+    /* BOTÃO ESTILIZADO PARA OS CARDS */
 .btn2 {
     border-radius: 20px;
     color: white;
